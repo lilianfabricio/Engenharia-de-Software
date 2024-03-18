@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>CDs e Vinis Clássicos: Tesouros da Música</title>
+<title>LM Vinis: Tesouros da Música</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
@@ -11,7 +11,7 @@
 <body>
   <!-- Header -->
   <header id="header">
-      <a href="inicial.html" class="logo"><strong>CDs e Vinis Clássicos</strong></a>
+      <a href="inicial.html" class="logo"><strong>LM Vinis</strong></a>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container">
               <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -49,8 +49,6 @@
       flex-wrap: wrap;
   }
   
-  
-
   .cart-item img {
   max-width: 100px;
   height: auto;
@@ -58,31 +56,44 @@
   </style>
 		
 <!-- NOME -->
-<center><br><br><div class="title">CDs e Vinis Clássicos</div><BR></center>
+<center><br><br><div class="title">LM Vinis</div><BR></center>
 <!-- NOME -->
 
 <main>
   <table>
-      <thead>
-          <tr>
-              <th>Produto</th>
-              <th>Preço</th>
-              <th>Quantidade</th>
-              <th>Subtotal</th>
-          </tr>
-      </thead>
-      <tbody id="cart-items">
-        <script>
-
-        </script>
-          <!-- Os itens do carrinho serão inseridos dinamicamente aqui -->
-      </tbody>
-      <tfoot>
-          <tr>
-              <td colspan="3">Total:</td>
-              <td id="total">R$ 0,00</td>
-          </tr>
-      </tfoot>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="cart-item">
+            <img src="https://www.londoncalling.com.br/imagens/produtos/NACLNDC2022.jpg" alt="Produto">
+            <div>
+              <h2>Creedence Clearwater Revival - Cosmos Factory</h2>
+            </div>
+          </div>
+        </td>
+        <td>R$ 119,90</td>
+        <td>
+          <button class="btn-quantity" onclick="decreaseQuantity(1)">-</button>
+          <span id="quantity-1">1</span>
+          <button class="btn-quantity" onclick="increaseQuantity(1)">+</button>
+        </td>
+        <td>R$ 119,90</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total:</td>
+        <td>R$ 119,90</td>
+      </tr>
+    </tfoot>
   </table>
   <button class="btn-checkout">Finalizar compra</button>
 </main>
